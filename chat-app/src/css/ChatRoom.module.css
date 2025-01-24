@@ -1,0 +1,120 @@
+:root {
+    --white: #fefefe;
+    --light-grey: #d9d9d9;
+    --black: #151515;
+    --dark: #161616;
+    --bg-color: #313128;
+    --yellow: #FFBF00;
+    --comp: #8000ff;
+    --grey: #3F3F3F;
+    --green: #4A4941;
+    --other-green: #D2CC93;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+
+.messageContainer {
+    overflow: auto;
+}
+
+strong {
+    color: var(--white);
+}
+
+.welcomeMessage {
+    color: var(--other-green);
+    margin: 0;
+}
+
+.roomDescription {
+    margin: 0 0 20px 0;
+    color: #8d8752;
+    font-size: x-large;
+}
+
+.profilePicture {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.admin {
+    font-size: 0.9em;
+    color: #ff2853;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.user {
+    font-size: 0.9em;
+    color: #df8a45;
+    margin-left: 5px;
+    font-weight: light;
+}
+
+.moderator {
+    font-size: 0.9em;
+    color: #00d062;
+    margin-left: 5px;
+}
+
+.messageField {
+    color: var(--yellow);
+    background-color: var(--dark);
+    border: none;
+    padding: 5px 0 5px 10px;
+    width: 75%;
+    border-radius: 10px;
+    margin: 10px 2px;
+}
+
+.messageField::placeholder {
+    color: var(--yellow);
+}
+
+.messageField:focus {
+    outline: solid 2px var(--yellow);
+}
+
+.name {
+    text-wrap: nowrap;
+}
+
+.msgSpan {
+    width: fit-content;
+    max-width: 60vw;
+    margin: 0 0 0 10px;
+}
+
+.messages {
+    color: var(--yellow);
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+}
+
+.msgInfo {
+    padding: 5px 10px;
+    
+}
+
+.msgAll{
+    display: flex;
+    flex-direction: column;
+}
